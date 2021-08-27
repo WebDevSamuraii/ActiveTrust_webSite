@@ -107,12 +107,11 @@ h2 {
 .container {
 }
 .content {
-  max-width: 1200px;
+  max-width: 1260px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 .header {
-  max-width: 1200px;
-  margin: 0 auto;
   padding-top: 40px;
 }
 .header__inner {
@@ -150,6 +149,13 @@ h2 {
 }
 .header__nav p {
   margin-left: 40px;
+}
+
+.header__nav a {
+  color: white;
+}
+.header__nav a:hover {
+  color: #59a8fd;
 }
 
 .slider {
@@ -199,10 +205,14 @@ h2 {
 .slider__contactUs a {
   color: white;
 }
+.slider__contactUs a:hover {
+  color: #027bfd;
+}
 
 /* Offer zone */
 .offers {
   margin-top: 100px;
+
   background-color: white;
 }
 .offers__inner {
@@ -555,4 +565,23 @@ h2 {
 }
 .footer__copyright p {
   margin-bottom: 10px;
+}
+
+@media (max-width: 1180px) {
+  .jobs {
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    padding: 0px;
+  }
+  .jobs__heading {
+    display: block;
+    max-height: none;
+  }
+  .jobs__heading img {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  .jobs__heading a {
+    padding: 0;
+  }
 }
