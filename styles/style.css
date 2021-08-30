@@ -568,6 +568,15 @@ h2 {
 }
 
 @media screen and (max-width: 1178px) {
+  .slider__text {
+    max-width: 400px;
+  }
+  .slider__logo {
+    max-width: 400px;
+  }
+  .slider__logo img {
+    width: 100%;
+  }
   .slider__heading {
     font-size: 38px;
   }
@@ -703,4 +712,75 @@ h2 {
   .footer__inner {
     display: block;
   }
+  .slider__heading {
+    font-size: 26px;
+  }
+  .slider__text {
+    font-size: 20px;
+  }
+  .slider__contactUs {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .confidence__info {
+    display: block;
+  }
+  .confidence__info p {
+    padding: 10px 0;
+  }
+  .about {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .about__inner {
+    display: block;
+  }
+  .about__logo {
+    position: absolute;
+    opacity: 0.05;
+    max-width: 500px;
+  }
+  .about__heading {
+    font-size: 20px;
+    max-width: 650px;
+  }
+  .about__heading p:nth-child(even) {
+    background-color: #025afd;
+    padding: 15px;
+    border-radius: 3px;
+  }
+  .about__heading p:last-child {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .contacts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .contacts__inner {
+    display: block;
+  }
+  .contacts__info {
+    margin-right: none;
+  }
+  .contacts__adress {
+    padding-top: 50px;
+  }
+  .contacts__links {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .slider__img {
+    padding-right: 30px;
+  }
+  .slider__logo {
+    display: none;
+  }
+  .offers__image {
+    display: none;
+  }
+}
+@media (max-width: 479px) {
 }
