@@ -592,54 +592,60 @@ h2 {
   }
 
   .offers__text {
-    font-family: "Montserrat", sans-serif;
     font-size: 19px;
-    line-height: 152%;
-    color: #000000;
+    line-height: 30px;
   }
   .offers__heading {
-    margin-top: 60px;
-    font-weight: 800;
-    font-size: 32px;
-    font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  .offers__heading p {
+    padding-right: 20px;
+  }
+  .offers__arrows {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: nowrap;
   }
-  .offers__types {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 100px;
+  .offers__arrows img:last-child {
+    margin-left: 7px;
   }
-
-  .offers__typeItem {
-    background: linear-gradient(100.74deg, #1c1c1c -7.06%, #0d0d0d 104.89%);
-    box-shadow: 0px 15px 20px rgba(23, 29, 38, 0.4);
-    border-radius: 5px;
-    width: 285px;
-    color: white;
-    margin: 5px 5px 5px 5px;
+  .confidence__info {
+    padding-bottom: 80px;
   }
-
-  .offers__typeItem p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-    color: #59a8fd;
-    font-weight: 800;
-    padding: 40px 0px 40px 15px;
+  .confidence__info p {
+    max-width: 450px;
   }
-
-  .offers__typeList {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    line-height: 112%;
-    padding: 0 40px 50px 40px;
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .about__inner {
+    flex-wrap: nowrap;
+  }
+  .about__logo {
+    min-width: 360px;
+    margin-right: 20px;
+  }
+  .about__heading {
+    font-size: 20px;
+    max-width: 550px;
   }
 
-  .offers__typeList li {
-    padding-bottom: 15px;
+  .contacts {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .contacts__inner {
+    flex-wrap: nowrap;
+  }
+  .contacts__info {
+    margin-right: 20px;
+  }
+  .contacts__email {
+    padding: 30px 0 60px 0;
+  }
+  .contacts__adress {
+    padding-top: 70px;
   }
 }
 @media screen and (max-width: 991px) {
