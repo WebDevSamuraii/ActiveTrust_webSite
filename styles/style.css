@@ -649,6 +649,55 @@ h2 {
   }
 }
 @media screen and (max-width: 991px) {
+  .offers {
+    padding-top: 30px;
+  }
+  .offers__image {
+    max-width: 400px;
+  }
+  .offers__image img {
+    width: 100%;
+  }
+  .offers__text {
+    max-width: 400px;
+  }
+  .offers__heading {
+    padding-bottom: 30px;
+  }
+
+  .confidence__heading {
+    padding-top: 80px;
+  }
+
+  .confidence__list {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .confidence__item {
+    margin: 20px 0px;
+  }
+  .confidence__item img {
+    position: absolute;
+    max-width: 90px;
+    width: 100%;
+  }
+  .confidence__info {
+    padding-top: 30px;
+  }
+
+  .footer {
+    font-size: 16px;
+  }
+  .footer__inner {
+    padding: 60px 0px;
+  }
+
+  .footer__nav {
+    font-family: "Montserrat", sans-serif;
+  }
+  .footer__navList {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .footer__inner {
