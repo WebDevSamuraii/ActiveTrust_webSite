@@ -772,6 +772,9 @@ h2 {
   }
 }
 @media (max-width: 520px) {
+  .content {
+    padding: 0 5px;
+  }
   .slider__img {
     padding-right: 30px;
   }
@@ -783,4 +786,28 @@ h2 {
   }
 }
 @media (max-width: 479px) {
+  .about__logo {
+    display: none;
+  }
+  .offers__arrows {
+  }
+  .contacts__request {
+    max-width: none;
+    width: 100%;
+  }
+  .contacts__requestZone {
+    max-width: none;
+    margin: none;
+  }
+  .contacts__requestZone h3 {
+    font-size: 18px;
+    padding-top: 25px;
+  }
+  .contacts__requestZone p {
+    font-size: 14px;
+  }
+  .contacts__forms {
+    margin-top: 20px;
+    padding: 0px 10px;
+  }
 }
