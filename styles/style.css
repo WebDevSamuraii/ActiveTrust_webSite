@@ -112,19 +112,33 @@ h2 {
   padding: 0 30px;
 }
 .header {
-  padding-top: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: black;
+  padding: 10px 0;
+}
+.header__container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 .header__inner {
   display: flex;
-  flex-direction: row;
-
+  align-items: center;
   justify-content: space-between;
+  min-height: 70px;
 }
+
 .header__logo {
   display: flex;
   flex-direction: row;
-
   align-items: center;
+}
+.header__logo img {
+  max-width: 100px;
 }
 .header__logoText {
   color: white;
@@ -137,18 +151,15 @@ h2 {
   color: #027bfd;
   font-weight: 700;
 }
+
 .header__nav {
   color: white;
-  display: flex;
-  flex-direction: row;
-
-  justify-content: space-between;
-  align-items: center;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
-.header__nav p {
-  margin-left: 40px;
+.header__nav > p {
+  position: relative;
+  margin: 0 0 0 20px;
 }
 
 .header__nav a {
@@ -708,7 +719,16 @@ h2 {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 767px) {
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
+  .header__nav > p {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 767px) {
   .footer__inner {
     display: block;
   }
@@ -788,8 +808,6 @@ h2 {
 @media (max-width: 479px) {
   .about__logo {
     display: none;
-  }
-  .offers__arrows {
   }
   .contacts__request {
     max-width: none;
