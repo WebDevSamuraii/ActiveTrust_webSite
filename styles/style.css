@@ -295,38 +295,51 @@ body._lock {
   padding-bottom: 15px;
 }
 
-.jobs {
-  margin-top: 100px;
-  padding-bottom: 70px;
+/*spoiler*/
+
+.block {
+  margin: 0px 0px 30px 0px;
 }
-.jobs__heading {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  font-weight: 800;
-  max-height: 1300px;
+.block__item {
+  margin: 0px 0px 10px 0px;
 }
 
-.jobs__heading img {
-  max-width: 560px;
+.block__title {
   width: 100%;
-  margin-top: 20px;
-}
-.jobs__heading p {
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-.jobs__heading a {
-  text-decoration: none;
-  color: #59a8fd;
-  font-weight: 500;
+  text-align: left;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
-  padding-top: 40px;
-  text-align: center;
+  color: white;
+  background-color: transparent;
+  padding: 10px;
+  position: relative;
+}
+.block._init .block__title {
+  cursor: pointer;
+}
+.block._init .block__title {
+  padding: 10px 40px 10px 10px;
+}
+.block._init .block__title::before,
+.block._init .block__title::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  transition: transform 0.3s ease 0s;
+}
+.block._init .block__title::after {
+  transform: rotate(-90deg);
+}
+.block._init .block__title._activate::after {
+  transform: rotate(0deg);
+}
+.block__text {
+  padding: 0 10px 10px;
+  line-height: 130%;
 }
 
 .confidence {
@@ -586,6 +599,8 @@ body._lock {
   margin-bottom: 10px;
 }
 
+/* adaptive zone */
+
 @media screen and (max-width: 1178px) {
   .slider__text {
     max-width: 400px;
@@ -659,6 +674,7 @@ body._lock {
     max-width: 550px;
   }
 
+  /* spoiler */
   .contacts {
     padding-top: 80px;
     padding-bottom: 80px;
